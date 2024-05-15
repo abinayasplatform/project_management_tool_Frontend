@@ -32,7 +32,10 @@ function Basic() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/login", formData);
+      const response = await axios.post(
+        "https://project-management-tool-backend-hnbz.onrender.com/api/login",
+        formData
+      );
 
       if ((response.data.msg = "Login successfully")) {
         localStorage.setItem("token", response.data.data.token);

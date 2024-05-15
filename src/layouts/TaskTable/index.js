@@ -38,7 +38,7 @@ const TaskTable = () => {
     try {
       const response = await axios({
         method: "get",
-        url: `http://localhost:3000/api/data/${decoded.userId}`,
+        url: `https://project-management-tool-backend-hnbz.onrender.com/api/data/${decoded.userId}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -56,7 +56,7 @@ const TaskTable = () => {
     try {
       const response = await axios({
         method: "delete",
-        url: `http://localhost:3000/tasks/${id}`,
+        url: `https://project-management-tool-backend-hnbz.onrender.com/tasks/${id}`,
         headers: {
           Authorization: "Bearer " + token,
         },
