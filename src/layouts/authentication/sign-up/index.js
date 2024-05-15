@@ -52,7 +52,7 @@ function Cover() {
     if (isChecked) {
       try {
         const response = await axios.post(
-          "https://project-management-tool-backend-nz6s.onrender.com/api/register",
+          "https://project-management-tool-backend-qgcw.onrender.com/api/register",
           formData
         );
         console.log(response);

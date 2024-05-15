@@ -32,7 +32,7 @@ const MemberTable = () => {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-nz6s.onrender.com/api/getAllUsers`,
+        url: `https://project-management-tool-backend-qgcw.onrender.com/api/getAllUsers`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -48,7 +48,7 @@ const MemberTable = () => {
     try {
       const response = await axios({
         method: "delete",
-        url: `https://project-management-tool-backend-nz6s.onrender.com/api/${id}`,
+        url: `https://project-management-tool-backend-qgcw.onrender.com/api/${id}`,
         headers: {
           Authorization: "Bearer " + token,
         },

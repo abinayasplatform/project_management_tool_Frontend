@@ -38,7 +38,7 @@ const TaskTable = () => {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-nz6s.onrender.com/api/data/${decoded.userId}`,
+        url: `https://project-management-tool-backend-qgcw.onrender.com/api/data/${decoded.userId}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -56,7 +56,7 @@ const TaskTable = () => {
     try {
       const response = await axios({
         method: "delete",
-        url: `https://project-management-tool-backend-nz6s.onrender.com/tasks/${id}`,
+        url: `https://project-management-tool-backend-qgcw.onrender.com/tasks/${id}`,
         headers: {
           Authorization: "Bearer " + token,
         },
