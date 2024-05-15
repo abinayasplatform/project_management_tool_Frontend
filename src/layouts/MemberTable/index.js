@@ -32,7 +32,7 @@ const MemberTable = () => {
     try {
       const response = await axios({
         method: "get",
-        url: `http://localhost:3000/api/getAllUsers`,
+        url: `https://project-management-tool-backend-nz6s.onrender.com/api/getAllUsers`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -48,7 +48,7 @@ const MemberTable = () => {
     try {
       const response = await axios({
         method: "delete",
-        url: `http://localhost:3000/api/${id}`,
+        url: `https://project-management-tool-backend-nz6s.onrender.com/api/${id}`,
         headers: {
           Authorization: "Bearer " + token,
         },

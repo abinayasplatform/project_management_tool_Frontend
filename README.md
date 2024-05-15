@@ -35,7 +35,7 @@ npm start
 
 <!-- Access the Application: -->
 
-Once the development server is running, you can access the application by visiting http://localhost:3000 in your web browser.
+Once the development server is running, you can access the application by visiting https://project-management-tool-backend-nz6s.onrender.com in your web browser.
 
 <!-- Task Management: -->
 
