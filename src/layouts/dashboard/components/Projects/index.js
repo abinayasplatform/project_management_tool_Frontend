@@ -27,7 +27,7 @@ function Projects() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/api/data/${decoded.userId}`,
+        url: `http://localhost:3000/api/data/${decoded.userId}`,
         headers: {
           Authorization: "Bearer " + token,
         },

@@ -51,10 +51,7 @@ function Cover() {
     e.preventDefault();
     if (isChecked) {
       try {
-        const response = await axios.post(
-          "https://project-management-tool-backend-hnbz.onrender.com/api/register",
-          formData
-        );
+        const response = await axios.post("http://localhost:3000/api/register", formData);
         console.log(response);
         if ((response.data.msg = "User created successfully")) {
           window.alert("User created successfully ‼️ ");

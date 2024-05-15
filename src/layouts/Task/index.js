@@ -46,7 +46,7 @@ function Task() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/api/data/${decoded.userId}`,
+        url: `http://localhost:3000/api/data/${decoded.userId}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -63,7 +63,7 @@ function Task() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/api/getAllUsers`,
+        url: `http://localhost:3000/api/getAllUsers`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -89,7 +89,7 @@ function Task() {
     try {
       const response = await axios({
         method: "post", //you can set what request you want to be
-        url: "https://project-management-tool-backend-hnbz.onrender.com/tasks/createTask",
+        url: "http://localhost:3000/tasks/createTask",
         data: formData,
         headers: {
           Authorization: "Bearer " + token,

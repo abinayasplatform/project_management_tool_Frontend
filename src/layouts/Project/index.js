@@ -58,7 +58,7 @@ function Project() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/api/getAllUsers`,
+        url: `http://localhost:3000/api/getAllUsers`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -75,7 +75,7 @@ function Project() {
     try {
       const resultdata = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/project/${projectId}`,
+        url: `http://localhost:3000/project/${projectId}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -104,7 +104,7 @@ function Project() {
     try {
       const response = await axios({
         method: "post",
-        url: "https://project-management-tool-backend-hnbz.onrender.com/project/createProject",
+        url: "http://localhost:3000/project/createProject",
         data: formData,
         headers: {
           Authorization: "Bearer " + token,
@@ -123,7 +123,7 @@ function Project() {
     try {
       const response = await axios({
         method: "put",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/project/${id}`,
+        url: `http://localhost:3000/project/${id}`,
         data: formData,
         headers: {
           Authorization: "Bearer " + token,

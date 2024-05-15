@@ -47,7 +47,7 @@ function TaskEdit() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/api/getAllUsers`,
+        url: `http://localhost:3000/api/getAllUsers`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -63,7 +63,7 @@ function TaskEdit() {
     try {
       const resultdata = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/project/${taskdata.project}`,
+        url: `http://localhost:3000/project/${taskdata.project}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -80,7 +80,7 @@ function TaskEdit() {
     try {
       const response = await axios({
         method: "get",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/tasks/${id}`,
+        url: `http://localhost:3000/tasks/${id}`,
         headers: {
           Authorization: "Bearer " + token,
         },
@@ -113,7 +113,7 @@ function TaskEdit() {
     try {
       const response = await axios({
         method: "put",
-        url: `https://project-management-tool-backend-hnbz.onrender.com/tasks/${id}`,
+        url: `http://localhost:3000/tasks/${id}`,
         data: formData,
         headers: {
           Authorization: "Bearer " + token,
