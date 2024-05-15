@@ -63,7 +63,7 @@ const TaskTable = () => {
       });
       if (response.data.msg == "Task deleted successfully") {
         window.alert("Task deleted successfully");
-        handleSubmit();
+        fetchTask();
       } else {
         window.alert("Unable to delete the Task ");
       }
